@@ -18,11 +18,13 @@ The goals / steps of this project are the following:
 [image1]: ./summary_statistics.png "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+[image4]: ./test_images/1.jpg "Traffic Sign 1"
+[image5]: ./test_images/2.jpg "Traffic Sign 2"
+[image6]: ./test_images/3.jpg "Traffic Sign 3"
+[image7]: ./test_images/4.jpg "Traffic Sign 4"
+[image8]: ./test_images/5.jpg "Traffic Sign 5"
+[image9]: ./test_images/6.jpg "Traffic Sign 6"
+[image10]: ./test_images/7.jpg "Traffic Sign 7"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -84,16 +86,16 @@ My final model consisted of the following layers:
 
 To train the model, I used an Adam Optimizer with the following hyperparameters:
 * Learning rate: 0.001
-* Epochs: 10
+* Epochs: 7
 * Batch size: 32
 
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+* training set accuracy of 0.998
+* validation set accuracy of 0.968
+* test set accuracy of 0.950
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
@@ -106,18 +108,18 @@ If a well known architecture was chosen:
 * What architecture was chosen?
 * Why did you believe it would be relevant to the traffic sign application?
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
- 
+
 
 ### Test a Model on New Images
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-Here are five German traffic signs that I found on the web:
+Here are 7 German traffic signs that I found on the web:
 
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
 ![alt text][image7] ![alt text][image8]
 
-The first image might be difficult to classify because ...
+The sixth image might be difficult to classify because after being rescaled to 32x32, it's hard to identify the features inside the triangle.
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -125,14 +127,16 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| Right-of-way at the next intersection      		| Right-of-way at the next intersection   									| 
+| Go straight or right     			| Go straight or right 										|
+| Priority road					| Priority road											|
+| Road work	      		| Beware of ice/snow					 				|
+| Priority road			| Priority road      							|
+| No entry	      		| No entry					 				|
+| Stop			| Stop      							|
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The model was able to correctly guess 6 of the 7 traffic signs, which gives an accuracy of 85.7%.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
