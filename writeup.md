@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/visualization.jpg "Visualization"
+[image1]: ./summary_statistics.jpg "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
@@ -48,7 +48,7 @@ You're reading it! and here is a link to my [project code](https://github.com/kh
 
 Here is an exploratory visualization of the data set. It is a bar chart showing the number of examples of each class in the training set.
 
-![summary statistics][summary_statistics.png]
+![summary statistics][image1]
 
 ### Design and Test a Model Architecture
 
