@@ -2,8 +2,6 @@
 
 ## Writeup
 
----
-
 **Build a Traffic Sign Recognition Project**
 
 The goals / steps of this project are the following:
@@ -48,9 +46,9 @@ You're reading it! and here is a link to my [project code](https://github.com/kh
 
 #### 2. Include an exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
+Here is an exploratory visualization of the data set. It is a bar chart showing the number of examples of each class in the training set.
 
-![alt text][image1]
+![summary statistics][summary_statistics.png]
 
 ### Design and Test a Model Architecture
 
