@@ -117,7 +117,8 @@ If a well known architecture was chosen:
 Here are 7 German traffic signs that I found on the web:
 
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![alt text][image7] ![alt text][image8] ![alt text][image9]
+![alt text][image10]
 
 The sixth image might be difficult to classify because after being rescaled to 32x32, it's hard to identify the features inside the triangle.
 
@@ -140,21 +141,46 @@ The model was able to correctly guess 6 of the 7 traffic signs, which gives an a
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
+Following are the top 5 predicted labels and their corresponding softmax probablities for each test image.
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+Right-of-way at the next intersection ( 1.0 )
+Pedestrians ( 7.94515e-17 )
+Double curve ( 4.22816e-17 )
+Beware of ice/snow ( 2.32742e-18 )
+Dangerous curve to the left ( 6.27883e-24 )
 
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+Go straight or right ( 0.999654 )
+Dangerous curve to the right ( 0.0003442 )
+General caution ( 1.53929e-06 )
+Children crossing ( 2.12725e-07 )
+Keep right ( 2.05118e-07 )
 
+Priority road ( 1.0 )
+Traffic signals ( 5.34864e-22 )
+End of all speed and passing limits ( 1.1122e-24 )
+Stop ( 6.70461e-28 )
+No entry ( 1.31896e-31 )
 
-For the second image ... 
+Beware of ice/snow ( 0.501217 )
+Road work ( 0.413236 )
+Bicycles crossing ( 0.0438114 )
+No entry ( 0.019929 )
+Bumpy road ( 0.0091911 )
 
+Priority road ( 1.0 )
+Traffic signals ( 1.75551e-13 )
+End of all speed and passing limits ( 2.60566e-14 )
+End of no passing by vehicles over 3.5 metric tons ( 3.06605e-16 )
+Turn right ahead ( 6.07776e-17 )
 
+No entry ( 1.0 )
+Stop ( 5.05376e-15 )
+Speed limit (20km/h) ( 2.16937e-19 )
+Double curve ( 5.29553e-20 )
+Right-of-way at the next intersection ( 6.38568e-21 )
 
-
+Stop ( 1.0 )
+Speed limit (80km/h) ( 5.85452e-08 )
+Speed limit (60km/h) ( 3.23047e-08 )
+No entry ( 2.71293e-08 )
+End of no passing by vehicles over 3.5 metric tons ( 1.99775e-08 )
