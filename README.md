@@ -84,8 +84,8 @@ My final model consisted of the following layers:
 | Fully connected		| outputs 120      									|
 | RELU					|												|
 | Fully connected		| outputs 84      									|
-| RELU					|									
-| Fully connected		| outputs 43      									||
+| RELU					|									|
+| Fully connected		| outputs 43      									|
 | Softmax				|         									|
  
 
